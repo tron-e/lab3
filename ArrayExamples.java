@@ -8,6 +8,10 @@ public class ArrayExamples {
       arr[i] = arr[arr.length - i - 1];
     }
   }
+  /* the bug here is that the array is overwritten as we iterate through each element 
+  this causes the latter half of the new array to be incorrect. To solve this we need 
+  to creat a new variable which temporarily stores the input array w/o being overwritten
+   */
 
   // Returns a *new* array with all the elements of the input array in reversed
   // order
